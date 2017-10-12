@@ -5,6 +5,7 @@ html
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Inconsolata|Poppins:700")
 		link(rel="stylesheet", href="css/main.css")
 		link(rel="stylesheet", href="css/section-base.css")
+		link(rel="stylesheet", href="css/section-contact.css")
 	body
 		.wrapper
 			section.section-base
@@ -30,3 +31,9 @@ html
 								li.socials-ig
 					.link.link-contact
 						span.menu-btn(data-section="contact") Contact
+				.content-contact
+					.content-column.scrollable.half-width.no-empty
+						h2 Contact Us!
+					.content-column.half-width#map
+		script(src="js/gmap.js")
+		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwJU4t7ZvGGVkdoqBBK7xvlED9CyK49qM&callback=initGmap")
