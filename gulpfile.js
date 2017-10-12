@@ -58,9 +58,10 @@ gulp.task('images', function () {
 gulp.task('sync', function () {
   sync({
     server: {
-      baseDir: 'prod'
+      baseDir: 'prod',
+      index: 'preloader.html'
     },
-    notify: false
+    notify: true
   });
 });
 
