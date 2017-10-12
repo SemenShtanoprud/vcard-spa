@@ -6,3 +6,60 @@
 	bottom: -50px
 	left: -150px
 	right: -150px
+
+	z-index: 2
+
+	p
+		text-align: justify
+
+	.description
+		margin-bottom: 40px
+		font-weight: bold
+
+	.content-column
+		&:first-child
+			padding: 70px 20px 70px 70px
+
+
+.contact-form
+	margin-top: 20px
+	margin-bottom: 60px
+
+	.submit-button
+		float: right
+
+input, textarea
+	width: 100%
+	border: none
+	border-bottom: 1px solid #000
+	padding-bottom: 10px
+
+	&:focus
+		border: none
+		outline: 0
+
+textarea
+	height: 70px
+	margin-bottom: 20px
+
+.field-left, .field-right
+	width: 50%
+	float: left
+	display: inline-block
+	margin-bottom: 50px
+
+
+.field
+	&-left
+		padding-right: 50px
+	&-right
+		padding-left: 50px
+
+	&-contact-message
+		clear: both
+
+.section-closer
+	position: absolute
+	top: -20px
+	left: -120px
+	z-index: 3
