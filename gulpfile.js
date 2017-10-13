@@ -59,7 +59,7 @@ gulp.task('sync', function () {
   sync({
     server: {
       baseDir: 'prod',
-      index: 'preloader.html'
+      // index: 'preloader.html'
     },
     notify: true
   });
