@@ -2,9 +2,10 @@ html
 	head
 		title.
 			VCard SPA
-		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Inconsolata|Poppins:700")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:700")
 		link(rel="stylesheet", href="css/main.css")
 		link(rel="stylesheet", href="css/section-base.css")
+		link(rel="stylesheet", href="css/section-contact.css")
 	body
 		.wrapper
 			section.section-base
@@ -30,3 +31,44 @@ html
 								li.socials-ig
 					.link.link-contact
 						span.menu-btn(data-section="contact") Contact
+				img.section-closer(src="img/close.png")
+				.content-contact
+					.content-column.scrollable.half-width.no-empty
+						h2 Contact Us!
+						p.description.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam amet officiis excepturi ipsam, maiores impedit.
+						.contact-form
+							.half-width.field-left
+								input.field-contact-name(placeholder="Your Name, Please")
+							.half-width.field-right
+								input.field-contact-mail(placeholder="Your e-mail address")
+							textarea.field-contact-message(placeholder="Write Your Message Here")
+							button.submit-button Send
+							.clear
+						.contact-tips
+							.tip.third-width
+								img.tip-image(src="img/icon-map.jpg")
+								br
+								p.tip-label Address
+								p.tip-contest.
+									123 S. South Avenue Sydney Australia 1992
+							.tip.third-width
+								img.tip-image(src="img/icon-phone.jpg")
+								br
+								p.tip-label Phone
+								p.tip-contest.
+									8-800-123-456-789
+									8-800-123-456-789
+							.tip.third-width
+								img.tip-image(src="img/icon-location.jpg")
+								br
+								p.tip-label E-mail
+								p.tip-contest.
+									test@email.test
+									another@email.test
+							.clear
+						p.contact-outro.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					.content-column.half-width#map
+		script(src="js/gmap.js")
+		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwJU4t7ZvGGVkdoqBBK7xvlED9CyK49qM&callback=initGmap")
