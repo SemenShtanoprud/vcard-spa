@@ -8,14 +8,14 @@ html
 		link(rel="stylesheet", href="css/section-contact.css")
 		link(rel="stylesheet", href="css/section-about.css")
 		link(rel="stylesheet", href="css/portfolio.css")
-	body
+	body(ng-app="vcard")
 		.wrapper
 			section.section-base
-				.content-base
+				.content-base(ng-controller="baseController")
 					.link.link-about.opener 
 						span.menu-btn(data-section="about") About
 					h1.
-						We are IT-agency from Ukraine
+						We are IT-agency from {{countryName}}
 					p.description.
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam amet officiis excepturi ipsam, maiores impedit.
 					.form-holder
@@ -34,7 +34,7 @@ html
 					.link.link-contact.opener
 						span.menu-btn(data-section="contact") Contact
 				img.section-closer(src="img/close.png")
-				.content-contact.hidden
+				.content-contact.hidden(ng-controller="contactController")
 					.content-column.scrollable.half-width.no-empty
 						h2 Contact Us!
 						p.description.
@@ -72,7 +72,7 @@ html
 						p.contact-outro.
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 					.content-column.half-width#map
-				.content-about.hidden
+				.content-about.hidden(ng-controller="aboutController")
 					.content-column.half-width.scrollable
 						h2 About Us!
 						p.description.
@@ -119,4 +119,6 @@ html
 						img(src="http://tortillastudio.com/wp-content/uploads/2016/05/laptop_room_on_the_desk_keyboard_mouse_apple_window_interior_73963_1600x1200.jpg")
 		script(src="js/gmap.js")
 		script(src="js/ui.js")
+		script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js")
+		script(src="js/app.js")
 		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwJU4t7ZvGGVkdoqBBK7xvlED9CyK49qM&callback=initGmap")
