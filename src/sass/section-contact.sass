@@ -16,9 +16,9 @@
 		margin-bottom: 40px
 		font-weight: bold
 
-	.content-column
+	> .content-column
 		&:first-child
-			padding: 70px 20px 70px 70px
+			padding: 70px 20px 70px 60px
 
 
 .contact-form
@@ -60,6 +60,34 @@ textarea
 
 .section-closer
 	position: absolute
-	top: -20px
-	left: -120px
+	top: -25px
+	left: -125px
 	z-index: 3
+
+.contact-tips
+	margin-bottom: 48px
+
+.contact-outro
+	color: #696969
+	font-size: 14px
+
+.tip
+	margin-bottom: 30px
+	display: inline-block
+	float: left
+
+	&:not(:first-child)
+		padding: 0 10px
+
+	&-image
+		height: 18px
+	&-label
+		padding: 15px 0
+		font-size: 16px
+		line-height: 24px
+		font-weight: 700
+	&-contest
+		font-size: 14px
+		line-height: 24px
+		color: #696969
+		text-align: left !important
